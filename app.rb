@@ -6,6 +6,7 @@ ENV['AUTH_TOKEN']         ||= 'foobar'
 ENV['PBKDF2_ITERATIONS']  ||= '64000'
 ENV['PBKDF2_ALGORITHM']   ||= 'sha256'
 ENV['DB_PATH']            ||= 'postgres://discourse:discourse@localhost/discourse_development'
+ENV['FREE_AUTH']          ||= 'deny'
 
 require './pbkdf2'
 require './data'
